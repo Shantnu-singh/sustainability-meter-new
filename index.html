@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environmental Awareness Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="headings">
+      <h1>Sustainibility Meter </h1>
+    </div>
+    <div class="container">
+      <div id="ageSection">
+        <pre><h2>Name: <input id="name"/></h2></pre>
+        
+        <pre><h2>Age:  <input type="number" id="ageInput" min="8" max="99"/></h2></pre>
+        
+        <pre><h2>Email:<input type="email" id="emailId"/></h2></pre>
+        
+        <button onclick="showQuestion()">Start Quiz</button>
+      </div>
+      <div id="quizSection">
+        <div id="questionNumber"></div>
+        <div id="question"></div>
+        <div id="desc"></div>
+        <input type="range" id="slider" min="0" max="5" value="0" />
+        <div id="sliderValue">Strongly Disagree</div>
+        <button onclick="submitAnswer()">Next</button>
+      </div>
+      <div id="resultSection">
+        <h2>Your score: <span id="result"></span></h2>
+        <p id="resultPara"></p>
+        
+        <img id="resultImage" src="" alt="Mother Earth" />
+        <button id="re" onclick="restartQuiz()">Restart Quiz</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
